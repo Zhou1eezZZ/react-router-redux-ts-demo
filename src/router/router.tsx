@@ -1,5 +1,5 @@
 import * as React from 'react'
-import { Router, Route, Switch,Redirect } from 'react-router-dom'
+import { Router, Route, Switch, Redirect } from 'react-router-dom'
 import { createBrowserHistory } from 'history'
 
 import Header from '../components/header/header'
@@ -31,7 +31,7 @@ class router extends React.Component {
                         <Redirect to="/notFound" />
                     </Switch>
                 </div>
-            </div> 
+            </div>
         )
         return (
             <Router history={history}>

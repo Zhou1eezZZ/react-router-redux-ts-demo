@@ -1,5 +1,6 @@
-@import '~antd/dist/antd.css';
+@import "~antd/dist/antd.css";
 .App {
   text-align: center;
-  font-family: 'Noto Sans SC', Helvetica,"PingFang SC", Tahoma, Arial, "Microsoft YaHei", "Hiragino Sans GB", "WenQuanYi Micro Hei", sans-serif;
+  font-family: "Noto Sans SC", Helvetica, "PingFang SC", Tahoma, Arial, "Microsoft YaHei", "Hiragino Sans GB",
+    "WenQuanYi Micro Hei", sans-serif;
 }

@@ -43,7 +43,7 @@ class article extends React.PureComponent<IProps, IState> {
         if (this.state.userInput) {
             this.props.addArticle(this.state.userInput)
             this.setState({
-                userInput:''
+                userInput: ''
             })
         } else {
             message.warning('请输入文章标题！！！')

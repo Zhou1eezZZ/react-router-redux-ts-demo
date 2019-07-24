@@ -1,12 +1,12 @@
 interface actionType {
-    payload:{
-        title:string
+    payload: {
+        title: string
     },
-    type:string
+    type: string
 }
 
-const initialState:any = {
-    articles:[
+const initialState: any = {
+    articles: [
         {
             id: 1,
             title: 'article 1'
@@ -26,10 +26,10 @@ const initialState:any = {
     ]
 }
 
-const reducer = (state = initialState,action:actionType):any => {
-    if(action.type === 'ADD_ARTICLE'){
-        return Object.assign({},state,{
-            articles:state.articles.concat({id:state.articles.length+1,title:action.payload.title})
+const reducer = (state = initialState, action: actionType): any => {
+    if (action.type === 'ADD_ARTICLE') {
+        return Object.assign({}, state, {
+            articles: state.articles.concat({ id: state.articles.length + 1, title: action.payload.title })
         })
     }
     return state
