@@ -1,8 +1,8 @@
 interface actionType {
     payload: {
-        title: string
-    },
-    type: string
+        title: string;
+    };
+    type: string;
 }
 
 const initialState: any = {
@@ -24,15 +24,18 @@ const initialState: any = {
             title: 'article 4'
         }
     ]
-}
+};
 
 const reducer = (state = initialState, action: actionType): any => {
     if (action.type === 'ADD_ARTICLE') {
         return Object.assign({}, state, {
-            articles: state.articles.concat({ id: state.articles.length + 1, title: action.payload.title })
-        })
+            articles: state.articles.concat({
+                id: state.articles.length + 1,
+                title: action.payload.title
+            })
+        });
     }
-    return state
-}
+    return state;
+};
 
-export default reducer
+export default reducer;
